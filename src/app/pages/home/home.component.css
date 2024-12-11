@@ -9,6 +9,8 @@
   border-radius: 10px;
 }
 
+
+
 @media (max-width: 768px) {
   .carousel-item img {
     height: 300px; /* Ajusta la altura en móviles */

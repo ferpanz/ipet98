@@ -1,3 +1,16 @@
+<div class="container-fluid p-5 justify-content-center bg-body-secondary">
+  <div class="row">
+    <div class="col-12 col-md-6 justify-content-center align-content-center">
+      <h1 class="p-md-5" style="font-size: 60px;">En el <span>Luigi</span> tenemos una propuesta para vos</h1>
+    </div>
+    <div class="row col-md-6 justify-content-center align-content-center">
+      <p style="font-size: x-large;">Un trayecto formativo técnico de cara al futuro con amplia salida laboral, en donde podrás poner en juego todas tus habilidades e intereses</p>
+
+    </div>
+
+  </div>
+</div>
+
 <!--Carrousel-->
 
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
@@ -20,7 +33,7 @@
       <div class="carousel-caption d-block">
         <h5>Técnico en Industria de los Alimentos</h5>
         <p>Some representative placeholder content for the second slide.</p>
-        <p><a class="btn btn-lg btn-primary" href="#">Conocé más</a></p>
+        <p><a class="btn btn-lg btn-primary" [routerLink]="['alimentos']">Conocé más</a></p>
       </div>
     </div>
     <div class="carousel-item">
@@ -28,7 +41,7 @@
       <div class="carousel-caption d-block">
         <h5>Técnico en Maestro Mayor de Obra</h5>
         <p>Some representative placeholder content for the third slide.</p>
-        <p><a class="btn btn-lg btn-primary" href="#">Conocé más</a></p>
+        <p><a class="btn btn-lg btn-primary" [routerLink]="['obra']">Conocé más</a></p>
       </div>
     </div>
   </div>
