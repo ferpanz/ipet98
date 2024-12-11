@@ -1,0 +1,29 @@
+.carousel-item img {
+  height: 500px; /* Asegura la misma altura para todas las imágenes */
+  object-fit: cover; /* Hace que las imágenes se ajusten sin deformarse */
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 300px; /* Ajusta la altura en móviles */
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.25rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
