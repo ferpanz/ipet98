@@ -1,0 +1,61 @@
+.mosaic-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3px; /* Espacio más compacto entre filas */
+}
+
+.mosaic-row {
+  display: flex;
+  justify-content: center;
+  gap: 3px; /* Espacio más compacto entre imágenes */
+}
+
+.mosaic-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+/* Tamaños mucho más pequeños */
+.mosaic-row:nth-child(1) .mosaic-img {
+  width: 12%; /* Más pequeñas */
+}
+
+.mosaic-row:nth-child(2) .mosaic-img {
+  width: 10%; /* Más pequeñas */
+}
+
+.mosaic-row:nth-child(2) .mosaic-img:nth-child(2) {
+  width: 15%; /* Imagen destacada en el centro */
+}
+
+.mosaic-row:nth-child(3) .mosaic-img {
+  width: 12%; /* Más pequeñas */
+}
+
+/* Animación al pasar el mouse */
+.mosaic-img:hover {
+  transform: scale(1.05);
+}
+
+/* Información */
+.info-container {
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .mosaic-container,
+  .info-container {
+    text-align: center;
+  }
+
+  .mosaic-row {
+    flex-wrap: wrap;
+  }
+
+  .mosaic-img {
+    width: 20%; /* Ajustar tamaño para pantallas pequeñas */
+  }
+}
