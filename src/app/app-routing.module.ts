@@ -5,6 +5,8 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
 import { TecnicoIndustriaDelosAlimentosComponent } from './pages/tecnico-industria-delos-alimentos/tecnico-industria-delos-alimentos.component';
 import { TecnicoMaestroMayorDeObrasComponent } from './pages/tecnico-maestro-mayor-de-obras/tecnico-maestro-mayor-de-obras.component';
 import { InstitucionalComponent } from './pages/institucional/institucional.component';
+import { CooperadoraEscolarComponent } from './pages/cooperadora-escolar/cooperadora-escolar.component';
+import { UnidadTecnicaComponent } from './pages/unidad-tecnica/unidad-tecnica.component';
 
 const routes: Routes = [
   {
@@ -26,6 +28,14 @@ const routes: Routes = [
   {
     path:"institucional",
     component:InstitucionalComponent
+  },
+  {
+    path:"cooperadora",
+    component:CooperadoraEscolarComponent
+  },
+  {
+    path:"talleres",
+    component:UnidadTecnicaComponent
   }
 
 ];

@@ -10,6 +10,8 @@ import { TecnicoIndustriaDelosAlimentosComponent } from './pages/tecnico-industr
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { FooterComponent } from './core/components/footer/footer.component';
 import { HeaderComponent } from './core/components/header/header.component';
+import { CooperadoraEscolarComponent } from './pages/cooperadora-escolar/cooperadora-escolar.component';
+import { UnidadTecnicaComponent } from './pages/unidad-tecnica/unidad-tecnica.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { HeaderComponent } from './core/components/header/header.component';
     TecnicoIndustriaDelosAlimentosComponent,
     ContactoComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    CooperadoraEscolarComponent,
+    UnidadTecnicaComponent
   ],
   imports: [
     BrowserModule,
