@@ -12,6 +12,7 @@ import { FooterComponent } from './core/components/footer/footer.component';
 import { HeaderComponent } from './core/components/header/header.component';
 import { CooperadoraEscolarComponent } from './pages/cooperadora-escolar/cooperadora-escolar.component';
 import { UnidadTecnicaComponent } from './pages/unidad-tecnica/unidad-tecnica.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { UnidadTecnicaComponent } from './pages/unidad-tecnica/unidad-tecnica.co
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

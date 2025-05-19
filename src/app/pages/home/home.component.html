@@ -83,26 +83,33 @@
       <p><a class="btn btn-primary" href="https://drive.google.com/drive/folders/15EbBkb1TROCXcHOxEJaQliiSYK5nuO2i?usp=sharing">Descargas</a></p>
     </div>
     <div class="col-12 col-md-5 order-0">
-      <form>
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre y Apellido">
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Dirección de correo electrónico</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail">
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Número telefónico</label>
-          <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="3571123456">
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Realizá tu consulta</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Hacé tu cansulta aquí"></textarea>
-        </div>
-        <button class="btn btn-lg btn-primary">Enviar</button>
-
-      </form>
+      <form (ngSubmit)="enviarWhatsApp()">
+  <div class="mb-3">
+    <label for="nombre" class="form-label">Nombre y Apellido</label>
+    <input
+      type="text"
+      class="form-control"
+      id="nombre"
+      placeholder="Nombre y Apellido"
+      [(ngModel)]="nombre"
+      name="nombre"
+      required
+    >
+  </div>
+  <div class="mb-3">
+    <label for="consulta" class="form-label">Realizá tu consulta</label>
+    <textarea
+      class="form-control"
+      id="consulta"
+      rows="8"
+      placeholder="Hacé tu consulta aquí"
+      [(ngModel)]="consulta"
+      name="consulta"
+      required
+    ></textarea>
+  </div>
+  <button class="btn btn-lg btn-primary" type="submit">Enviar</button>
+</form>
 
     </div>
   </div>
